@@ -1,7 +1,17 @@
+import Footer from '@/components/footer/footer'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {Road_Rage,Roboto} from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const roadRage = Road_Rage({
+  weight: '400',
+  subsets:['latin'],
+  display: 'swap'
+})
+const roboto =Roboto({
+  weight:'100',
+  subsets: ['latin'],
+  display: "swap"
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body >
+        {children}
+        <Footer roboto={roboto} roadRage={roadRage} />
+      </body>
     </html>
   )
 }
