@@ -1,6 +1,7 @@
 import Footer from '@/components/footer/footer'
 import './globals.css'
 import {Road_Rage,Roboto} from 'next/font/google'
+import Navbar from '@/components/navbar'
 
 const roadRage = Road_Rage({
   weight: '400',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
+        <Navbar roboto={roboto}/>
         {children}
         <Footer roboto={roboto} roadRage={roadRage} />
       </body>
