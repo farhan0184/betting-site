@@ -39,7 +39,7 @@ const LiveScore = ({ data }) => {
                     {
                         data.list.flatMap((item, idx) => (
                             <div className='w-10 h-6 bg-silver flex items-center justify-center rounded-md'>
-                                <p className='font-bold text-[12px]  text-white'>{item}</p>
+                                <p className=' text-[14px]   text-black font-extrabold'>{item}</p>
                             </div>
                         ))
                     }

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <Navbar roboto={roboto}/>
+        <Navbar roboto={roboto} roadRage={roadRage}/>
         {children}
         <Footer roboto={roboto} roadRage={roadRage} />
       </body>
