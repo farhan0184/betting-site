@@ -20,10 +20,10 @@ const Navbar = ({ roboto, roadRage }) => {
                         <h1 className='md:text-5xl text-3xl text-white '>XYX</h1>
                     </div>
 
-                    <div className={`z-50 flex gap-5  md:flex-row flex-col  md:static absolute  items-center duration-1000 ease-in md:pb-0 pb-5  ${isOpen ? 'block bg-brightGray left-0 w-full' : 'w-full -left-[400px]'}`}>
+                    <div className={`z-50 flex gap-5  md:flex-row flex-col  md:static absolute  items-center duration-1000 ease-in md:pb-0 pb-5   ${isOpen ? 'block bg-brightGray left-0 w-full' : 'md:w-[55%] w-full -left-[400px]'}`}>
                         {
                             navLinks.map(item => (
-                                <div key={item.id} className='text-white text-xl font-extrabold hover:text-yellow-500'>
+                                <div key={item.id} className='text-white text-xl  font-extrabold hover:text-yellow-500'>
                                     <Link href={'#'} className={roboto.className}>{item.title}</Link>
                                 </div>
                             ))

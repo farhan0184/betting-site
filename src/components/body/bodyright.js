@@ -27,7 +27,7 @@ const BodyRight = ({ roboto }) => {
                             <h1 className='text-2xl text-white text-center font-bold'>InPlay</h1>
                         </div>
                         {/* body */}
-                        <div className='flex flex-wrap gap-2 px-3 py-2 bg-silver'>
+                        <div className='flex flex-wrap  gap-2 px-3 py-2 bg-silver'>
                             {
                                 liveSports.map(item => (
                                     <LiveSports key={item.id} item={item}/>

@@ -6,7 +6,7 @@ const LiveSports = ({item}) => {
         <div  className='relative '>
             <Image
                 src={item.img}
-                width={115}
+                width={105}
                 alt={item.title}
             />
             <div className='absolute bottom-3 w-full'>
