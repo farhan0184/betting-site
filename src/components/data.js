@@ -1,6 +1,62 @@
 import { Baseball, BasketBall, Cricket, FloorBall, Football, MobileApp, Rugby, TableTennis, Tennis, Volleyball,LiveCricket,LiveFootball,LiveCasino,LivePoker,LiveTennis,LiveBasketball,LiveTennis1,LiveTableTennis,LiveRugby,LiveVolleyball,Ind,Aus,Ban,Fra,Pak,Usa, SAL, AUSL,Img1,Img2,Img3,Img4,Img5,Img6} from "./imageImport"
+import { BiDesktop,BiFile, BiMobileAlt,BiBell,BiLogIn,BiUserCircle,BiMoney } from 'react-icons/bi';
+import { HiLanguage } from 'react-icons/hi2';
+import {GiPayMoney } from 'react-icons/gi';
+import {TbCurrencyTaka } from 'react-icons/tb';
 
-
+// upper Navbar
+const upperNavbarLinks =[
+    {
+        id: 1,
+        title: 'Mobile App',
+        img: <BiMobileAlt/>
+    },
+    {
+        id: 2,
+        title: 'Desktop App',
+        img: <BiDesktop/>
+    },
+    {
+        id: 3,
+        title: 'EN',
+        img: <HiLanguage/>
+    },
+    {
+        id: 4,
+        title: 'Result',
+        img: <BiFile/>
+    },
+    {
+        id: 5,
+        title: 'Bonus',
+        img: <GiPayMoney/>
+    },
+    {
+        id: 6,
+        title: 'Notification Show Here',
+        img: <BiBell/>
+    },
+    {
+        id: 7,
+        title: 'Login',
+        img: <BiLogIn/>
+    },
+    {
+        id: 8,
+        title: 'Register',
+        img: <BiUserCircle/>
+    },
+    {
+        id: 9,
+        title: 'Payments',
+        img: <TbCurrencyTaka/>
+    },
+    {
+        id: 10,
+        title: 'Deposit Now',
+        img: <BiMoney/>
+    },
+]
 // navbar 
 const navLinks = [
     {
@@ -708,4 +764,4 @@ const carouselData = [
     }
 ]
 
-export {navLinks,sports,liveSports,championships, sportsList,winLists, liveScores,carouselData}
+export {navLinks,sports,liveSports,championships, sportsList,winLists, liveScores,carouselData,upperNavbarLinks}

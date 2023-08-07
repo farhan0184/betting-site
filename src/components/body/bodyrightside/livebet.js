@@ -27,7 +27,7 @@ const LiveBet = ({ name, roboto }) => {
                                 <div className=''>
                                     <FaHome className='text-xl' />
                                 </div>
-                                <div className='flex py-1 gap-3'>
+                                <div className='flex py-1 gap-2'>
                                     {
                                         sportsList.map(item => (
                                             <div key={item.id} className='flex gap-[10px] items-center'>
