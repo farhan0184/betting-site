@@ -9,52 +9,62 @@ const upperNavbarLinks =[
     {
         id: 1,
         title: 'Mobile App',
-        img: <BiMobileAlt/>
+        img: <BiMobileAlt/>,
+        
     },
     {
         id: 2,
         title: 'Desktop App',
-        img: <BiDesktop/>
+        img: <BiDesktop/>,
+        
     },
     {
         id: 3,
         title: 'EN',
-        img: <HiLanguage/>
+        img: <HiLanguage/>,
+        
     },
     {
         id: 4,
         title: 'Result',
-        img: <BiFile/>
+        img: <BiFile/>,
+        
     },
     {
         id: 5,
         title: 'Bonus',
-        img: <GiPayMoney/>
+        img: <GiPayMoney/>,
+        
     },
     {
         id: 6,
         title: 'Notification Show Here',
-        img: <BiBell/>
+        img: <BiBell/>,
+        
     },
     {
         id: 7,
         title: 'Login',
-        img: <BiLogIn/>
+        img: <BiLogIn/>,
+        
     },
     {
         id: 8,
         title: 'Register',
-        img: <BiUserCircle/>
+        img: <BiUserCircle/>,
+        
     },
     {
         id: 9,
         title: 'Payments',
-        img: <TbCurrencyTaka/>
+        img: <TbCurrencyTaka/>,
+        
     },
     {
         id: 10,
         title: 'Deposit Now',
-        img: <BiMoney/>
+        img: <BiMoney/>,
+        
     },
 ]
 // navbar 

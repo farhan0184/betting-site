@@ -24,10 +24,10 @@ const BodyRight = ({ roboto }) => {
                         {/* header */}
                         <div className='flex items-center justify-center gap-2 bg-jade'>
                             <div className='w-2 h-2 bg-red-600' />
-                            <h1 className='text-2xl text-white text-center font-bold'>InPlay</h1>
+                            <h1 className='lg:text-2xl md:text-xl text-white text-center  font-bold'>InPlay</h1>
                         </div>
                         {/* body */}
-                        <div className='flex flex-wrap  gap-2 px-3 py-2 bg-silver'>
+                        <div className='grid sm:grid-cols-5 grid-cols-3 gap-2 md:px-2 lg:px-5 px-5 md:py-2 bg-silver'>
                             {
                                 liveSports.map(item => (
                                     <LiveSports key={item.id} item={item}/>
@@ -38,24 +38,25 @@ const BodyRight = ({ roboto }) => {
                     {/* upcoming sports */}
                     <div className=''>
                         <div className='bg-gravel'>
-                            <h1 className='text-2xl text-white text-center font-bold'>Upcoming Sports</h1>
+                            <h1 className='lg:text-2xl md:text-xl text-white text-center font-bold'>Upcoming Sports</h1>
                         </div>
                         <div className=' py-2 relative'>
                             <Image
                                 src={Slider1}
+                                className='w-full'
                                 alt='Slider'
                             />
-                            <div className='text-white md:w-[60%] w-[80%] absolute bottom-10 ml-[15%]'>
-                                <h1 className='text-[30px] font-bold'>Next Level Game</h1>
-                                <p className='text-[14px] font-bold'>Next Level Game</p>
-                                <button className='bg-jade px-4 py-2 text-[14px] font-bold'>Take A Ride</button>
+                            <div className='text-white md:w-[60%] lg:w-[75%]  w-[80%] absolute bottom-10 ml-[15%]'>
+                                <h1 className='text-[30px] sm:text-2xl lg:text-3xl 2xl:text-7xl font-bold'>Next Level Game</h1>
+                                <p className='text-[14px] lg:text-xl 2xl:text-2xl font-bold'>Next Level Game</p>
+                                <button className='bg-jade px-4 py-2 lg:px-6 2xl:px-8 lg:py-3  text-[14px] lg:text-xl 2xl:text-2xl font-bold'>Take A Ride</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='md:flex '>
                     {/* left side section */}
-                    <div className='md:w-[72%] md:mx-2'>
+                    <div className='md:w-[72%] md:mx-4'>
                         <LiveBet roboto={roboto} name={'Live Bet'}/>
                         <div className=' mb-2 bg-gravel '>
                             <Carousel name={'Live Casino'}/>
@@ -74,7 +75,7 @@ const BodyRight = ({ roboto }) => {
                                 <div>
                                     <TiPrinter/>
                                 </div>
-                                <h1 className='text-xl font-extrabold'>Top Championship</h1>
+                                <h1 className='md:text-[16px] lg:text-xl text-xl font-extrabold'>Top Championship</h1>
                             </div>
                             <div className='mt-3 py-3 mx-3'>
                                 {

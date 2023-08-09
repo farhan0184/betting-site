@@ -1,4 +1,5 @@
 import Body from '@/components/body/body'
+import Modal from '@/components/modal'
 import {Road_Rage,Roboto} from 'next/font/google'
 
 const roadRage = Road_Rage({
@@ -18,6 +19,7 @@ export default function Home() {
       <div className='mb-4'>
       <Body roboto={roboto}/>
       </div>
+      
     </div>
   )
 }

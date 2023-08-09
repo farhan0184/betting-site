@@ -10,7 +10,7 @@ const Carousel = ({ name }) => {
         document.getElementById("content").scrollLeft += 300;
     }
     return (
-        <div className='bg-jade mb-2'>
+        <div className='bg-jade mb-4'>
             <div className='text-[14px] font-bold text-white'>
                 <h1>{name}</h1>
             </div>

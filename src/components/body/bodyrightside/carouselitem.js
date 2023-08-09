@@ -6,9 +6,10 @@ const CarouselItem = ({item}) => {
         <div>
             <Image
                 src={item.img}
+                width={1000}
                 alt={item.title}
             />
-            <p className='md:text-[12px] text-[8px] text-white'>{item.title}</p>
+            <p className='md:text-[8px] text-[5px] text-white'>{item.title}</p>
         </div>
     );
 };

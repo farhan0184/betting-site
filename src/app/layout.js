@@ -1,8 +1,12 @@
+"use client"
 import Footer from '@/components/footer/footer'
 import './globals.css'
 import {Road_Rage,Roboto} from 'next/font/google'
 import Navbar from '@/components/navbar'
 import UpperNavbar from '@/components/uppernavbar'
+import Modal from '@/components/modal'
+import { useState } from 'react'
+
 
 const roadRage = Road_Rage({
   weight: '400',
@@ -21,13 +25,16 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const [showModal, setShowModal] = useState(false)
+  const handleOnClose =()=> setShowModal(false)
   return (
     <html lang="en">
       <body >
-        <UpperNavbar/>
+        <UpperNavbar showModal={showModal} setShowModal={setShowModal}/>
         <Navbar roboto={roboto} roadRage={roadRage}/>
         {children}
         <Footer roboto={roboto} roadRage={roadRage} />
+        <Modal visible={showModal} onClose={handleOnClose}/>
       </body>
     </html>
   )

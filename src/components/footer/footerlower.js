@@ -13,7 +13,7 @@ export default function FooterLower({roboto}) {
                         alt="footer logo"
                     />
                 </div>
-                <div className="text-white md:w-[85%] w-full text-center">
+                <div className="text-white md:w-[85%] w-full text-center text-[12px] xl:text-[14px]">
                     <p className={roboto.className}>The contents of the website is owned and operated by ACOM Latin America N.V. as a License Holder
                         (Curacao license No. 1668/JAZ). Exidna Enterprises LTD (НЕ435756) and Kassifoni Enterprises LTD
                         НЕ435760)provide processing services on the website as Billing Agents. All rights reserved and protected by law</p>
